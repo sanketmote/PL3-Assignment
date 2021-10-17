@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Max Min</title>
+    <style>
+        header {
+            font-size: 20px;
+            color: black;
+            float: left;
+            background-size: 100%;
+            overflow: hidden;
+        }
+
+        header div nav {
+            text-align: right;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: dimgray !important;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        samp {
+            font-weight: bold;
+            font-size: 15px;
+            font-family: inherit;
+        }
+
+        kbd {
+            background-color: #eee;
+            border-radius: 3px;
+            border: 1px solid #b4b4b4;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+            color: #333;
+            display: inline-block;
+            font-size: 0.85em;
+            font-weight: 700;
+            line-height: 1;
+            padding: 2px 4px;
+            white-space: nowrap;
+        }
+
+        h2 {
+            width: 800px;
+        }
+
+        footer {
+            width: 750px;
+            color: blue;
+            font-style: italic;
+        }
+
+        pre {
+            width: 750px;
+            border-style: solid;
+            border-width: 3px;
+            border-right-width: 3px;
+            border-left-width: 3px;
+            border-color: black;
+            border-bottom-width: 3px
+        }
+    </style>
+</head>
+
+<body style="margin: 0%;">
+
+    <header>
+        <div>
+            <nav>
+                <a href="./index.html">Q1</a>
+                <a href="./Q2.html">Q2</a>
+                <a href="./Q3.html">Q3</a>
+            </nav> <br><br>
+
+        </div>
+
+
+    </header>
+    <section style="width: 80%;margin-left: 20%;">
+        <h1>
+            <h2>Problem Statement:</h2>
+            <h2> Write a program in any language to find the maximum and
+                minimum element in an array.</h2>
+            <footer>The problem statement is to write a code in any programming langauge to
+                find the maximum and minimum numbers from an array specified numbers are inputted to array.
+                The code is written in C++ langauge. Go through the sample input and output.
+                Variables used in the program are given below.
+                The complexity of the program is mentioned below.</footer>
+        </h1>
+        <p><strong>Code:</strong></p>
+        <pre>
+            #include &lt; bits/stdc++.h &gt;
+            int main() <br>
+            {  <br>
+                int no;<br>
+                cin>> no;<br>
+                int arr[no]<br>
+                for (i=0;i &lt;no;i++)<br>
+                {<br>
+                    cin>>arr[i]<br>
+                }<br>
+                sort(arr,arr+no);<br>
+                cout&lt;&lt;"The minimum no. is "&lt;&lt;arr[0]&lt;&lt;"\n";<br>
+                cout&lt;&lt;"The maximum no. is "&lt;&lt;arr[no-1]&lt;&lt;"\n";<br>
+            }<br>
+        </pre>
+        <p><strong>Variables used in the program:</strong></p>
+        <var>i, no, arr</var>
+        <p><strong>Sample Input:</strong></p>
+        <samp>10<br>
+            56 32 78 54 12 90 34 27 27 43
+        </samp>
+        <p><samp>Sample Output:<br><kbd>The minimum no. is 12</kbd>
+                <br>
+                <kbd>The maximum no. is 90</kbd>
+                <br>
+            </samp></p>
+        <p><strong>Complexity:</strong></p>
+        <p>O(nlogn)</p>
+    </section>
+
+</body>
+
+</html>

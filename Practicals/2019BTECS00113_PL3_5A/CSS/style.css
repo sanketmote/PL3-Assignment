@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background-color: #e4e3e3;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 49px;
+}
+
+.main1 {
+    width: 100%;
+}
+.main {
+    width: 100%;
+}
+
+
+.heading {
+    position: relative;
+    bottom: 224px;
+    text-align: center;
+    font-size: 110%;
+    background-color: #84a9ac;
+    z-index: -1;
+    height: 204px;
+    padding-top: 20px;
+}
+
+#aboutus {
+    padding-top: 3%;
+}
+
+.aboutus, .contact, .faculties,.info{
+    margin: auto;
+    width: 90%;
+}
+
+.email{
+    text-decoration: none;
+}

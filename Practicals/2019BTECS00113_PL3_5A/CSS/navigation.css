@@ -1,0 +1,29 @@
+header{
+	/* padding: 1%; */
+	background-size: 100%;
+	overflow: hidden;	
+	
+}
+
+nav {
+	text-align: right;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #204051!important;
+}
+nav a{
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+    color: #f2f2f2;
+    z-index: -1;
+    
+}
+
+.topnav a:hover {
+    background-color: #01a9b4;
+    color: white;
+  }
