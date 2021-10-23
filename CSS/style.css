@@ -112,6 +112,8 @@ hr{
 	border-style: double;
 	border-radius: 10px;
 	border-width: 5px;
+	width: 70%;
+	margin: auto;
 }
 
 input[type='text'],input[type='email'] ,textarea {
