@@ -16,8 +16,8 @@
 
 	<header>
 		<nav>
-			<a href="/index.html" class="active">Home</a>
-			<a href="#aboutme">About Me</a>
+			<a href="/resume.html" class="active">Home</a>
+			<a href="#aboutme">Education</a>
 			<a href="#skills">Skills</a>
 			<a href="#certificates1">Certificates</a>
 			<a href="#projects1">Projects</a>
@@ -286,9 +286,23 @@
 	<hr>
 	<div class="contact-me">
 		<h2>Get In Touch</h2>
-		<h3>Sanket Mote</h3>
-		<p>Mail: sanketmote01@gmail.com</p>
-		<a href="mailto:sanketmote01@gmail.com" class="btn">CONTACT ME</a>
+		<form name="contact-me" onsubmit="return validation()">
+			<label for="fname">First Name : - </label>
+			<input type="text" id="fname" name="firstname" placeholder="Enter Your First name">
+			<br>
+			<label for="lname">Last Name : - </label>
+			<input type="text" id="lname" name="lastname" placeholder="Enter Your last name">
+			<br>
+			<label for="Email">Email Id : - </label>
+			<input type="email" name="email" id="email" placeholder="Enter Your Email Id">
+			<br>
+			<label>Message : - </label>
+			<input type="text" name="message" id="message">
+			<br>
+			<input type="submit" value="CONTACT ME">
+		</form>
+		<br>
+		<br>
 	</div>
 	<br>
 
@@ -299,6 +313,44 @@
 	<footer class="bottom-container" style="text-align: center ;">
 		<span>&copy; T5_2019BTECS00113</span>
 	</footer>
+
+	<script>
+		function validation() {
+			var fname = document.forms["contact-me"]["firstname"];
+			var lname = document.forms["contact-me"]["lastname"];
+			var email = document.forms["contact-me"]["email"];
+			var message = document.forms["contact-me"]["message"];
+
+			if (fname.value == "") {
+				window.alert("Please enter First name.");
+				name.focus();
+				return false;
+			}
+
+			if (lname.value == "") {
+				window.alert("Please enter your Last Name.");
+				lname.focus();
+				return false;
+			}
+
+			if (email.value == "") {
+				window.alert(
+					"Please enter a valid e-mail address.");
+				email.focus();
+				return false;
+			}
+
+			if (message.value == "") {
+				window.alert(
+					"Please enter a Message.");
+				message.focus();
+				return false;
+			}
+			alert("Email Sent ...")
+			return true;
+
+		}
+	</script>
 </body>
 
 </html>
